@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Aman</title>
+    <link rel="icon" type="image/x-icon" href="/images/a-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38b1c0b918.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <img src="images/aditya.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>
+                    Machine Learning Engineer / Data Scientist
+                </p>
+                <h1>
+                    Hi, I am Aditya,<br>from New Delhi, India!
+                </h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Highly motivated Computer Science Engineer with a strong foundation in computer science
+                        principles and a passion for software development, data science, and machine learning. Seeking
+                        opportunities to apply technical expertise and innovative problem-solving skills in cutting-edge
+                        projects and contribute to the advancement of technology.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <p>Python</p>
+                            </li>
+                            <li>
+                                <p>C</p>
+                            </li>
+                            <li>
+                                <p>C++</p>
+                            </li>
+                            <li>
+                                <p>Data Science</p>
+                            </li>
+                            <li>
+                                <p>Machine Learning</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aug 2023 - Current</span><br>IT Intern at Technip FMC</li>
+                            <li><span>Dec 2022 - June 2023</span><br>Machine Learning Intern at Nawgati</li>
+                            <li><span>July 2022 - Aug 2022</span><br>Machine Learning Intern at Quy Technologies</li>
+                            <li><span>Feb 2022 - March 2022</span><br>Data Science Intern at LetsGrowMore</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>B.Tech CSE at GGSIPU<br>9.09 CGPA</li>
+                            <li><span>2015 - 2017</span><br>Higher Secondary Education at Ryan International
+                                School<br>91.6%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Proficient in creating and deploying machine learning models to harness the power of data.
+                        Capable of designing algorithms that extract valuable insights, make predictions, and automate
+                        decision-making processes. Experienced in various machine learning techniques, such as
+                        supervised and unsupervised learning, deep learning, and reinforcement learning, for
+                        applications in diverse fields, from healthcare to finance. Skilled in model evaluation, feature
+                        engineering, and ethical considerations for responsible AI development.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h2>Deep Learning</h2>
+                    <p>Proficient in the art of deep learning, leveraging neural networks with multiple layers to tackle
+                        complex problems. Skilled in developing and fine-tuning deep neural models for tasks like image
+                        and speech recognition. Experienced in using convolutional neural networks (CNNs) for computer
+                        vision and recurrent neural networks (RNNs) for sequential data analysis. Proficient in
+                        frameworks like TensorFlow and PyTorch, and adept at optimizing model performance and handling
+                        big data for deep learning applications..</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Data Science</h2>
+                    <p>Adept in the realm of data science, transforming raw information into actionable insights.
+                        Proficient in data collection, cleaning, and exploratory analysis, with strong data
+                        visualization skills. Capable of developing predictive models, performing statistical analysis,
+                        and implementing machine learning solutions for problem-solving. Skilled in programming
+                        languages such as Python and R, with expertise in data manipulation libraries like Pandas and
+                        data visualization tools like Matplotlib and Seaborn. Experienced in applying data science
+                        techniques to various domains, from business intelligence to healthcare, to drive data-informed
+                        decision-making.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/ocr.png" alt="">
+                    <div class="layer">
+                        <h3>Attention OCR Model</h3>
+                        <p>Attention OCR for number plates is a cutting-edge technology that uses deep learning models
+                            and attention mechanisms to accurately recognize and extract alphanumeric characters from
+                            vehicle license plates in images and videos.</p>
+                        <a href="https://github.com/aditya-1967/attention_ocr_paddle" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/spr.png" alt="">
+                    <div class="layer">
+                        <h3>Speech Emotion Recognition</h3>
+                        <p>Speech emotion recognition models analyze vocal patterns to detect and classify emotional states
+                            in spoken language, enabling applications in sentiment analysis, mental health assessment, and
+                            human-computer interaction.</p>
+                        <a href="https://github.com/aditya-1967/Speech-Emotion-Recognition" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/nlp.png" alt="">
+                    <div class="layer">
+                        <h3>MCQ Generation</h3>
+                        <p>
+                            MCQ generation from Passage models automatically create multiple-choice questions based on the
+                            content of a given text, facilitating assessments, quizzes, and educational content creation.
+                        </p>
+                        <a href="https://github.com/aditya-1967/Text-Summarisation-Bert" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/aditya-1967?tab=repositories" class="btn" target="_blank">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> aditya.win.official@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-retro"></i> +917838178945</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aditya-aman-296370194/", target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/aditya-1967" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.threads.net/@__aditya.221b" target="_blank"><i class="fa-brands fa-threads"></i></i></a>
+                    </div>
+                    <a href="./AdityaAman_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>
+                Copyright &copy; Aditya Aman. <i class="fa-solid fa-user-astronaut"></i>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfBSmU7cHOLXLAJ-hKyqQQDuYQrVK4E4OQC_MT-HG2zLbKAZEl2neQI0J54jtLzI4/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "I got your message. 'May the force be with you'"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
+
+</html>
